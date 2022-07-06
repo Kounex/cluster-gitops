@@ -6,10 +6,11 @@ metadata:
 subjects:
   - kind: User
     apiGroup: rbac.authorization.k8s.io
-    name: "system:serviceaccount:kounex-argocd:kounex-argocd-argocd-application-controller"
+    # name: "system:serviceaccount:kounex-argocd:kounex-argocd-argocd-application-controller"
+    name: "kounex-argocd-argocd-application-controller"
   - kind: User
     apiGroup: rbac.authorization.k8s.io
-    name: "system:serviceaccount:kounex-argocd:kounex-argocd-argocd-server"
+    name: "kounex-argocd-argocd-server"
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
