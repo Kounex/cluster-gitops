@@ -4,8 +4,8 @@ kind: Kustomization
 namespace: argocd
 
 bases:
-  - ../../manifests/argocd/apps/nayris/client/overlays
-  - ../../manifests/argocd/apps/nayris/server/overlays
+  - ../../manifests/argocd/apps/nayris/client/overlays/jonas-ocp
+  - ../../manifests/argocd/apps/nayris/server/overlays/jonas-ocp
 
 resources:
   - ./cluster-apps-project.yaml

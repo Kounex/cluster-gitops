@@ -7,4 +7,3 @@ resources:
   - deployment.yaml
   - route.yaml
   - service.yaml
-  - secret.yaml

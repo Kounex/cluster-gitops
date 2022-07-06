@@ -10,7 +10,7 @@ spec:
   source:
     path: environments/jonas-ocp
     repoURL: https://github.com/Kounex/cluster-gitops.git
-    targetRevision: master
+    targetRevision: main
   syncPolicy:
     automated:
       selfHeal: true

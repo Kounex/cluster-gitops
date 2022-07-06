@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: nestjs-server
-          image: ghcr.io/kounex/nestjs-server:master
+          image: ghcr.io/kounex/nayris/nestjs-server:master
           ports:
             - name: 4444-tcp
               containerPort: 4444
@@ -27,8 +27,6 @@ spec:
             - name: PORT
               value: '4444'
           imagePullPolicy: Always
-      imagePullSecrets:
-        - name: kounex-ghcr
       restartPolicy: Always
   strategy:
     type: Recreate

@@ -20,14 +20,12 @@ spec:
     spec:
       containers:
         - name: nginx-client
-          image: ghcr.io/kounex/nginx-client:master
+          image: ghcr.io/kounex/nayris/nginx-client:master
           ports:
             - name: 8080-tcp
               containerPort: 8080
               protocol: TCP
           imagePullPolicy: Always
-      imagePullSecrets:
-        - name: kounex-ghcr
       restartPolicy: Always
   strategy:
     type: Recreate
