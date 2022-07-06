@@ -8,5 +8,4 @@ bases:
   - ./server/overlays/jonas-ocp
 
 resources:
-  - namespace.yaml
   - application.yaml
