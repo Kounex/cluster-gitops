@@ -9,3 +9,4 @@ bases:
 
 resources:
   - namespace-kounex-argocd.yaml
+  - application-cluster-application-manager.yaml
