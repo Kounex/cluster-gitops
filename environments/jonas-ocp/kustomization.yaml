@@ -7,4 +7,5 @@ bases:
   - ../../manifests/argocd/apps/nayris
 
 resources:
-  - ./project-cluster-apps.yaml
+  - application-cluster-application-manager.yaml
+  - project-cluster-apps.yaml

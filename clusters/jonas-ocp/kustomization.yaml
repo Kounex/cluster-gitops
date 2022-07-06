@@ -7,6 +7,5 @@ bases:
   - ../../environments/bootstrap
   - ../../environments/jonas-ocp
 
-resources:
-  - namespace-argocd.yaml
-  - application-cluster-config-manager.yaml
+# resources:
+  # - namespace-argocd.yaml

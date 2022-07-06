@@ -4,8 +4,9 @@ kind: Kustomization
 namespace: nayris
 
 bases:
-  - ./client/overlays/jonas-ocp
-  - ./server/overlays/jonas-ocp
+  - client/overlays/jonas-ocp
+  - server/overlays/jonas-ocp
 
 resources:
+  - namespace.yaml
   - application.yaml
