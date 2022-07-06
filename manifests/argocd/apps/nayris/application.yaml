@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: nayris
+spec:
+  destination:
+    namespace: argocd
+    server: https://kubernetes.default.svc
+  project: cluster-apps
+  source:
+    path: manifests/argocd/apps/nayris
+    repoURL: https://github.com/Kounex/cluster-gitops.git
+    targetRevision: main
+  syncPolicy:
+    automated:
+      selfHeal: true
