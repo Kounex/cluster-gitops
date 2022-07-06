@@ -14,6 +14,11 @@ spec:
       tls:
         insecureEdgeTerminationPolicy: Redirect
         termination: edge
+  rbac:
+    policy: |
+      g, system:cluster-admins, role:admin
+      g, cluster-admins, role:admin
+    scopes: '[groups]'
   resourceCustomizations: |
     argoproj.io/Application:
       health.lua: |
