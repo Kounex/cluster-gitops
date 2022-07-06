@@ -4,7 +4,7 @@ metadata:
   name: nayris
 spec:
   destination:
-    namespace: nayris
+    namespace: argocd
     server: https://kubernetes.default.svc
   project: cluster-apps
   source:
