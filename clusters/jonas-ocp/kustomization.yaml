@@ -8,5 +8,5 @@ bases:
   - ../../environments/jonas-ocp
 
 resources:
-  - argocd-namespace.yaml
-  - cluster-config-manager.yaml
+  - namespace-argocd.yaml
+  - application-cluster-config-manager.yaml
