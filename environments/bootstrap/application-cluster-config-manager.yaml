@@ -4,7 +4,7 @@ metadata:
   name: cluster-config-manager
 spec:
   destination:
-    namespace: argocd
+    namespace: kounex-argocd
     server: https://kubernetes.default.svc
   project: cluster-config
   source:

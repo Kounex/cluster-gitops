@@ -1,11 +1,11 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
-namespace: argocd
+namespace: kounex-argocd
 
 bases:
   - ../../environments/bootstrap
   - ../../environments/jonas-ocp
 
-# resources:
-  # - namespace-argocd.yaml
+resources:
+  - namespace-kounex-argocd.yaml
